@@ -6,6 +6,7 @@ public class DataTypes {
 		// TODO Auto-generated method stub
 
 		byte abc = 125;
+		System.out.println(abc);
 
 	}
 
