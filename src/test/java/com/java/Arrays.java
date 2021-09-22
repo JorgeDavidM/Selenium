@@ -7,12 +7,12 @@ public class Arrays {
 
 		// ARREGLO UNIDIMENSIONAL
 
-		String[] dias = { "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "S", "D" };
-		System.out.println("El dìa de hoy es: " + dias[0]);
-
-		for (int i = 0; i < dias.length; ++i) {
-			System.out.println("Hoy es: " + dias[i]);
-		}
+//		String[] dias = { "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "S", "D" };
+//		System.out.println("El dìa de hoy es: " + dias[0]);
+//
+//		for (int i = 0; i < dias.length; ++i) {
+//			System.out.println("Hoy es: " + dias[i]);
+//		}
 
 		// ARREGLO BIDIMENSIONAL
 
@@ -27,7 +27,14 @@ public class Arrays {
 		nombresCompletos[3][0] = "Paola";
 		nombresCompletos[3][1] = "Muñoz";
 
-		System.out.println(nombresCompletos[1][0] + " " + nombresCompletos[1][1]);
+//		System.out.println(nombresCompletos[1][0] + " " + nombresCompletos[1][1]);
+
+		for (int i = 0; i < nombresCompletos.length; ++i) {
+			for (int j = 0; j < nombresCompletos[i].length; ++j) {
+				System.out.println(nombresCompletos[i][j] + " " + nombresCompletos[i][j += 1]);
+			}
+
+		}
 
 	}
 
